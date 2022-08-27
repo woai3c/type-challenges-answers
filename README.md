@@ -1,2 +1,2 @@
-# -type-challenges-answers
-answers to type-challenges
+# type-challenges-answers
+[type-challenges](https://github.com/type-challenges/type-challenges)
