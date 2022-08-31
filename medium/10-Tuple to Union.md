@@ -19,6 +19,6 @@ type TupleToUnion<T> = T extends [infer A, ...infer B] ? (A | TupleToUnion<B>) :
 ```
 答案二
 ```ts
+// 不是很理解，这里 T[number] 相当于遍历数组？
 type TupleToUnion<T extends unknown[]> = T[number]
 ```
-`T[number]` 相当于遍历数组。
