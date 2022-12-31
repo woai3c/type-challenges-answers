@@ -18,7 +18,7 @@ type Diff<O extends Record<PropertyKey, any>, O1 extends Record<PropertyKey, any
   ]: key extends keyof O ? O[key] : O1[key]
 }
 ```
-发现一个更简历的答案
+发现一个更简洁的答案
 ```ts
 type Diff<O, O1> = {[ key in keyof (O & O1) as key extends keyof (O | O1) ? never : key ]: (O & O1)[key] }
 ```
