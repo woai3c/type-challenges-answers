@@ -13,4 +13,4 @@ type Combs<T extends string[]> = T extends [infer A extends string, ...infer Res
 : never
 ```
 
-请参考 [3326](./3326-BEM style string.md) 题的解释。
+请参考 [3326](./3326-BEM%20style%20string.md) 题的解释。
