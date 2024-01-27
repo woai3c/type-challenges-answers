@@ -17,7 +17,7 @@ type BEM<B extends string, E extends string[], M extends string[]> = `${B}${Help
 
 上述答案有两个知识点比较重要。
 
-一、`T[number]` 数组中的每个索引都是数字，所以用 `number` 表示 T 中的每一项。`T[number]` 遍历整个 T 获得的集合。
+一、`T[number]` 数组中的每个索引都是数字，所以用 `number` 表示 T 中的每一项。`T[number]` 遍历整个 T 获得的联合类型。
 
 ```ts
 type Combination<T extends unknown[]> = T[number]

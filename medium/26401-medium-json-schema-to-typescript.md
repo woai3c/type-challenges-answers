@@ -95,3 +95,10 @@ type HandleProperties<T, Required extends string[] = []> = Copy<{
     b?: string
 }
 ```
+
+`SimpleType` 中有一处代码也需要讲解一下，`T['enum'][number]` 是为了将数组类型转为联合类型，示例如下所示：
+
+```ts
+type Type = [string, number]
+type a = Type[number] // string | number
+```
